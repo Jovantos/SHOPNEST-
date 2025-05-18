@@ -1,0 +1,469 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    background: #ff6f61;
+    padding: 20px 30px;
+    box-shadow: 0 4px 12px rgba(255, 111, 97, 0.2);
+    justify-content: flex-start;
+    border-bottom: 4px solid #ff4d3d;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-image {
+    height: 70px;
+    width: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    padding-left: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6f61;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(255, 111, 97, 0.9), rgba(255, 77, 61, 0.9)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin-bottom: 40px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.hero .btn {
+    display: inline-block;
+    background: white;
+    color: #ff6f61;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background: white;
+    color: #ff4d3d;
+}
+
+/* Featured Products Section */
+.featured-products {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.featured-products h2 {
+    text-align: center;
+    color: #34495e;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.product-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-item h3 {
+    color: #34495e;
+    padding: 20px 20px 10px;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.product-item p {
+    color: #666;
+    padding: 0 20px 20px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.product-item a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.product-item a:hover {
+    color: #ff4d3d;
+}
+
+/* About Preview Section */
+.about-preview {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f8f8f8;
+    margin-top: 40px;
+}
+
+.about-preview h2 {
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+.about-preview p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    color: #666;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff6f61;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #ff856e;
+}
+
+/* Footer */
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+/* Fashion Styles */
+.fashion-container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.fashion-title {
+    text-align: center;
+    color: #ff6f61;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+}
+
+.fashion-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.fashion-item {
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    width: 260px;
+    padding: 18px;
+    text-align: center;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.fashion-item:hover {
+    box-shadow: 0 4px 16px rgba(255,111,97,0.13);
+    transform: translateY(-6px) scale(1.03);
+}
+
+.fashion-item img {
+    width: 180px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.fashion-item h3 {
+    color: #34495e;
+    margin: 10px 0 8px 0;
+    font-size: 1.2rem;
+}
+
+.fashion-item p {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.fashion-item .price {
+    color: #ff6f61;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* About Us Page Styles */
+.about-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-container h2 {
+    color: #ff6f61;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.about-container h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #ff6f61;
+    margin: 15px auto 0;
+}
+
+.about-container h3 {
+    color: #34495e;
+    font-size: 1.8rem;
+    margin: 40px 0 20px;
+}
+
+.about-container p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.about-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.about-container ul li {
+    color: #555;
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    font-size: 1.1rem;
+}
+
+.about-container ul li::before {
+    content: '✓';
+    color: #ff6f61;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.stat-item {
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    color: #ff6f61;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    color: #34495e;
+    font-size: 1.1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    header {
+        padding: 15px 20px;
+    }
+    
+    .logo-image {
+        height: 45px;
+        margin-left: 15px;
+    }
+    
+    .header-title {
+        font-size: 1.5rem;
+        padding-left: 0;
+    }
+    
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+    
+    nav a {
+        padding: 5px 0;
+    }
+    
+    .hero {
+        padding: 60px 20px;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .product-grid {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    
+    .homekitchen-item,
+    .fashion-item {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .fashion-container {
+        margin: 20px;
+        padding: 15px;
+    }
+    
+    .fashion-title {
+        font-size: 1.8rem;
+    }
+    
+    .fashion-item {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .fashion-item img {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .about-container {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .about-container h2 {
+        font-size: 2rem;
+    }
+    
+    .about-container h3 {
+        font-size: 1.5rem;
+    }
+    
+    .about-container p {
+        font-size: 1rem;
+    }
+    
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+}
